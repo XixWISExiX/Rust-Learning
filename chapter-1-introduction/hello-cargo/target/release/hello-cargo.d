@@ -1,0 +1,1 @@
+/home/joshua/Desktop/MainFolder/Work/Stockmarket/RustLearning/chapter-1-introduction/hello-cargo/target/release/hello-cargo: /home/joshua/Desktop/MainFolder/Work/Stockmarket/RustLearning/chapter-1-introduction/hello-cargo/src/main.rs
