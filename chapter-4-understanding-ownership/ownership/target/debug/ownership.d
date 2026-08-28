@@ -1,0 +1,1 @@
+/home/joshua/Desktop/MainFolder/Work/Stockmarket/RustLearning/chapter-4-understanding-ownership/ownership/target/debug/ownership: /home/joshua/Desktop/MainFolder/Work/Stockmarket/RustLearning/chapter-4-understanding-ownership/ownership/src/main.rs
