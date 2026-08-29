@@ -1,0 +1,1 @@
+/home/joshua/Desktop/MainFolder/Work/Stockmarket/RustLearning/chapter-5-using-structs/structs/target/debug/structs: /home/joshua/Desktop/MainFolder/Work/Stockmarket/RustLearning/chapter-5-using-structs/structs/src/main.rs
