@@ -1,1 +1,0 @@
-/home/joshua/Desktop/MainFolder/Work/Stockmarket/RustLearning/chapter-6-enums-and-pattern-matching/enums/target/debug/enums: /home/joshua/Desktop/MainFolder/Work/Stockmarket/RustLearning/chapter-6-enums-and-pattern-matching/enums/src/main.rs
