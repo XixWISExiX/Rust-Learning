@@ -59,5 +59,19 @@ pub fn run() {
         println!("{}", b);
     }
 
+    let pig_word = pig_latinify("Dogman eats the horse");
+    println!("Pig Latin?!: {}", pig_word);
+
     println!();
+}
+
+// Only works with 1-byte chars
+fn pig_latinify(str: &str) -> String {
+    let mut pig_str = String::from("");
+    for word in str.split_whitespace() {
+        let mut word_chars = word.chars(); 
+        let first_char = word_chars.next().unwrap(); // chars arr doesn't have first char now
+        pig_str += &format!("{}-{}ay ", &word_chars.as_str(), &first_char);                
+    }
+    return pig_str;
 }

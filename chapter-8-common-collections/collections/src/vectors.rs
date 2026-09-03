@@ -1,3 +1,5 @@
+use std::io;
+
 #[derive(Debug)]
 enum SpreadsheetCell {
     Int(i32),
@@ -16,6 +18,7 @@ pub fn run() {
 
     vec.push(6);
     vec.push(7);
+    println!("Vector Print: {vec:?}");
 
     let third: &i32 = &vec[2];
     {
@@ -67,5 +70,14 @@ pub fn run() {
         println!("Element: {r:#?}");
     }
 
+    let mut vec = vec![1, 2, 3, 4, 5, 6, 7];
+    vec.sort();
+    let mut median = 0;
+    for i in 0..(vec.len()/2)+1 {
+        median = vec[i]; // copied value because int
+    }
+    println!("Median of {vec:?} is {median}");
+
     println!();
 }
+
