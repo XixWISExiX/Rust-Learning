@@ -1,11 +1,11 @@
 pub mod unrecoverable_errors;
 pub mod recoverable_errors;
-pub mod panic;
+pub mod when_to_panic;
 
 fn main() {
     unrecoverable_errors::run();
     println!("++++++++++++++++++++");
     recoverable_errors::run();
     println!("++++++++++++++++++++");
-    panic::run();
+    when_to_panic::run();
 }

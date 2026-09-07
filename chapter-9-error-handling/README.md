@@ -8,6 +8,10 @@ Rust doesn't have exceptions, instead it has the type Result<T, E> for recoverab
 
 Most of the programming notes are in the main.rs files under the following project.
 
+Usually use panic!() when debuging and try to use Result<T, E> in production.
+
+panic!() can also be used if the code goes into a "bad state", a state not anticipated by your program.
+
 ## Error Project (topics)
 
 - Unrecoverable Errors with panic!
