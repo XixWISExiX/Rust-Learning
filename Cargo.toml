@@ -1,15 +1,16 @@
 [workspace]
 members = [
-    "chapter-1-introduction/hello-cargo",
-    "chapter-2-programming-a-guessing-game/guessing-game",
-    "chapter-3-common-programming-concepts/functions",
-    "chapter-3-common-programming-concepts/variables",
-    "chapter-4-understanding-ownership/ownership",
-    "chapter-5-using-structs/structs",
-    "chapter-6-enums-and-pattern-matching/enums",
-    "chapter-7-packages-crates-modules/backyard",
-    "chapter-7-packages-crates-modules/resturant",
-    "chapter-8-common-collections/collections",
-    "chapter-9-error-handling/errors",
+    "chapter-01-introduction/hello-cargo",
+    "chapter-02-programming-a-guessing-game/guessing-game",
+    "chapter-03-common-programming-concepts/functions",
+    "chapter-03-common-programming-concepts/variables",
+    "chapter-04-understanding-ownership/ownership",
+    "chapter-05-using-structs/structs",
+    "chapter-06-enums-and-pattern-matching/enums",
+    "chapter-07-packages-crates-modules/backyard",
+    "chapter-07-packages-crates-modules/resturant",
+    "chapter-08-common-collections/collections",
+    "chapter-09-error-handling/errors",
+    "chapter-10-generics-traits-lifetimes/generics-traits-lifetimes"
 ]
 resolver = "3"
