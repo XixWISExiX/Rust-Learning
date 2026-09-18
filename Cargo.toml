@@ -11,6 +11,8 @@ members = [
     "chapter-07-packages-crates-modules/resturant",
     "chapter-08-common-collections/collections",
     "chapter-09-error-handling/errors",
-    "chapter-10-generics-traits-lifetimes/generics-traits-lifetimes"
-]
+    "chapter-10-generics-traits-lifetimes/generics-traits-lifetimes",
+    "chapter-11-writing-automated-tests/adder",
+    "chapter-11-writing-automated-tests/automated-tests",
+    "chapter-12-io-project/minigrep", "chapter-13-iterators-and-closures/functional-language-features"]
 resolver = "3"

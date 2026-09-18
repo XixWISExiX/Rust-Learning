@@ -3,6 +3,14 @@
 version = 4
 
 [[package]]
+name = "adder"
+version = "0.1.0"
+
+[[package]]
+name = "automated-tests"
+version = "0.1.0"
+
+[[package]]
 name = "backyard"
 version = "0.1.0"
 
@@ -22,6 +30,10 @@ version = "0.1.0"
 
 [[package]]
 name = "errors"
+version = "0.1.0"
+
+[[package]]
+name = "functional-language-features"
 version = "0.1.0"
 
 [[package]]
@@ -59,6 +71,10 @@ name = "libc"
 version = "0.2.189"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "3eaf3ede3fee6db1a4c2ee091bf8a8b4dccdc6d17f656fb07896ee72867612f2"
+
+[[package]]
+name = "minigrep"
+version = "0.1.0"
 
 [[package]]
 name = "ownership"
