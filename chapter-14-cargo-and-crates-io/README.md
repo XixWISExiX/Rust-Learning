@@ -1,5 +1,8 @@
 # More About Cargo and Crates.io
 
+## Published Crate Example
+https://crates.io/crates/xixwisexix_art
+
 ## Topics
 - Customize your build through release profiles
 - Publish libraries on crates.io
