@@ -5,7 +5,7 @@ use std::error::Error;
 
 fn main() {
     let args: Vec<String> = env::args().collect();
-    let config = Config::build(&args).unwrap_or_else(|err| {
+    let config = Config::build(args.into_iter()).unwrap_or_else(|err| {
         eprintln!("Problem parsing arguments: {err}");
         process::exit(1);
     });
@@ -25,24 +25,52 @@ struct Config {
 }
 
 impl Config {
-    fn build(args: &[String]) -> Result<Config, &'static str> {
-        // Default arg + 2 custom args
-        if args.len() < 3 {
-            return Err("not enough arguments");
-        }
+    // NOTE: Chapter 13 implementation 
+    fn build(mut args: impl Iterator<Item = String>) -> Result<Config, &'static str>{
+        // skip the first redundant arg
+        args.next();
 
-        let query = args[1].clone();
-        let file_path = args[2].clone();
+        // NOTE: This iterator implementation is quicker than the clone counter part.
+        // this gives ownership outside the iterator
+        let query = match args.next() {
+            Some(arg) => arg,
+            None => return Err("Didn't get a query string"),
+        };
+        let file_path = match args.next() {
+            Some(arg) => arg, 
+            None => return Err("Didn't get file path"),
+        };
 
         let ignore_case = env::var("IGNORE_CASE").is_ok();
 
-        // Normal:
-        // cargo run -- to poem.txt
-        // Ignoreing case:
-        // IGNORE_CASE=1 cargo run -- to poem.txt
+        Ok(Config {
+            query,
+            file_path,
+            ignore_case,
+        })
 
-        Ok(Config { query, file_path, ignore_case })
     }
+
+
+    // NOTE: Previous implementation
+    //fn build(args: &[String]) -> Result<Config, &'static str> {
+    //    // Default arg + 2 custom args
+    //    if args.len() < 3 {
+    //        return Err("not enough arguments");
+    //    }
+
+    //    let query = args[1].clone();
+    //    let file_path = args[2].clone();
+
+    //    let ignore_case = env::var("IGNORE_CASE").is_ok();
+
+    //    // Normal:
+    //    // cargo run -- to poem.txt
+    //    // Ignoreing case:
+    //    // IGNORE_CASE=1 cargo run -- to poem.txt
+
+    //    Ok(Config { query, file_path, ignore_case })
+    //}
 }
 
 use minigrep::{ search, search_case_insensitive };

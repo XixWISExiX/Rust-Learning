@@ -13,6 +13,7 @@ This project tries to use the following:
 
 We want to run something like the below code
 `cargo run -- searchstring example-filename.txt`
+`cargo run -- frog poem.txt`
 
 Can also use environmental variables
 `IGNORE_CASE=1 cargo run -- BoDy poem.txt`

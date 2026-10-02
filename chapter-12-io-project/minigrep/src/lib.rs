@@ -1,13 +1,19 @@
+// NOTE: Chapter 13 implementation
 pub fn search<'a>(query: &str, contents: &'a str) -> Vec<&'a str> {
-    let mut results = Vec::new();
-    //unimplemented!(); // NOTE: used to mark unimplemented function
-    for line in contents.lines() {
-        if line.contains(query) {
-            results.push(line);
-        }
-    }
-    results
+    contents.lines().filter(|line| line.contains(query)).collect()
 }
+
+// NOTE: Old implementation
+//pub fn search<'a>(query: &str, contents: &'a str) -> Vec<&'a str> {
+//    let mut results = Vec::new();
+//    //unimplemented!(); // NOTE: used to mark unimplemented function
+//    for line in contents.lines() {
+//        if line.contains(query) {
+//            results.push(line);
+//        }
+//    }
+//    results
+//}
 
 pub fn search_case_insensitive<'a>(query: &str, contents: &'a str) -> Vec<&'a str> {
     let query = query.to_lowercase();
