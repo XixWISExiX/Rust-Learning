@@ -1,0 +1,14 @@
+[package]
+# NOTE: The below name won't work because it has been used in crate.io
+#name = "guessing_game"
+
+name = "xixwisexix_art"
+version = "0.1.0"
+# NOTE: Versions need to change for updating the published crate
+#version = "0.1.1"
+#version = "0.1.2"
+edition = "2024"
+description = "A crate where you can mix primary colors"
+license = "MIT" # license is required for crates pushed into crate.io
+
+[dependencies]

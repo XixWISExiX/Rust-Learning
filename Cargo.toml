@@ -14,5 +14,5 @@ members = [
     "chapter-10-generics-traits-lifetimes/generics-traits-lifetimes",
     "chapter-11-writing-automated-tests/adder",
     "chapter-11-writing-automated-tests/automated-tests",
-    "chapter-12-io-project/minigrep", "chapter-13-iterators-and-closures/functional-language-features"]
+    "chapter-12-io-project/minigrep", "chapter-13-iterators-and-closures/functional-language-features", "chapter-14-cargo-and-crates-io/a_crate", "chapter-14-cargo-and-crates-io/art"]
 resolver = "3"

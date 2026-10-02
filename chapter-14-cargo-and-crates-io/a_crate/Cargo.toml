@@ -1,0 +1,19 @@
+[package]
+name = "a_crate"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+
+# custom settings for dev build
+[profile.dev]
+# this controls the number of optimizations rust will apply to your code
+opt-level = 0
+
+# custom settings for release build
+[profile.release]
+opt-level = 3
+
+[workspace]
+resolver = "3"
+members = ["add_one","adder"]
