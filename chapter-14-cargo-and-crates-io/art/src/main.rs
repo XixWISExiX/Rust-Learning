@@ -1,5 +1,5 @@
-use kinds::PrimaryColor;
-use utils::mix;
+use xixwisexix_art::kinds::PrimaryColor;
+use xixwisexix_art::utils::mix;
 
 fn main() {
     let red = PrimaryColor::Red;
